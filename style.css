@@ -1,0 +1,91 @@
+body{
+	display: flex;
+	background: white;
+	font-family: Arial;
+	margin: 0px;
+	border: 0px;
+	flex-wrap: wrap;
+}
+#qwe{
+	display: flex;
+	justify-content: space-around;
+	width: 200px;
+	height: 200px;
+	background: white;
+	margin: 40px 60px 20px 150px;
+}
+#qwe img{
+	width: 200px;
+	margin: 10px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.reg1 table{
+	margin: 40px 80px 20px 0px;
+}
+.reg1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background: #D3D3D3;
+	margin: 0px 70px;
+	width: 90%;
+	height: 400px;
+	border-radius: 10px;
+}
+.reg1 b{
+	color: darkgray;
+}
+#sel{
+	width: 170px;
+}
+#sel1{
+	width: 170px;
+}
+.reg{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: #D3D3D3;
+	margin: 0px 70px;
+	width: 90%;
+	height: 400px;
+	border-radius: 10px;
+}
+.reg table{
+	
+	width: 100%;
+	margin: 20px 20px;
+}
+.reg button{
+	width: 150px;
+	height: 30px;
+	background: #2c8391;
+	border: none;
+	color: white;
+}
+.H3{
+	margin: 50px 400px 10px 70px ;
+}
+.H2{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 50px;
+    justify-content: space-between;
+	width: 160px;
+}
+.HeadLine{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	margin: -22px 0px;
+	background-color: #2c8391;
+	color: white;
+	width: 100%;
+    height: 60px
+}
+.HeadLine h2{
+	margin: 25px 100px 0px 50px;
+}
