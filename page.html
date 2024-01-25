@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Twitter</title>
+</head>
+<body>
+	<div class="HeadLine">
+		<div><h2>TWITTER</h2></div>
+		<div class="H2">
+			<h5>Tweets</h5><h5><span id="userN2"><span></h5><h5><a href="signIN.html">Log out</a></h5>
+		</div>
+	</div>
+	<div class="H3"><h2>Welcome <span id="userN"></span></h2></div>
+	<div class="reg1">
+		<div id="qwe">
+			<img src="https://twirpz.files.wordpress.com/2015/06/twitter-avi-gender-balanced-figure.png" width="200px">
+		</div>
+		<div>
+			<table>
+				<tr><td><b>FULL NAME:</b></td></tr>
+				<tr><td><span id="userN1"></span></td><td><span id="userS"></span></td></tr>
+				<tr><td><b>EMAIL:</b></td></tr>
+				<tr><td><span id="userE"></span></td></tr>
+				<tr><td><b>COUNTRY:</b></td></tr>
+				<tr><td><span id="userC"></span></td></tr>
+				<tr><td><b>BIRTHDATE</b></td></tr>
+				<tr><td><span id="userD"></span></td></tr>
+			</table>
+		</div>
+	</div>
+
+	<script type="text/javascript">	
+	document.addEventListener("DOMContentLoaded", function() {
+    // Получаем userName из localStorage
+    let userName = localStorage.getItem("UN");
+    let userSame = localStorage.getItem("US");
+    let userCountry = localStorage.getItem("UC");
+    let userDate = localStorage.getItem("UD");
+    let userEmail = localStorage.getItem("UE");
+
+    if (userName) {
+        // Используем userName, например, для установки текста в элемент
+        document.getElementById("userN").textContent = userName;
+        document.getElementById("userN1").textContent = userName;
+        document.getElementById("userN2").textContent = userName;
+        document.getElementById("userS").textContent = userSame;
+        document.getElementById("userC").textContent = userCountry;
+        document.getElementById("userD").textContent = userDate;
+        document.getElementById("userE").textContent = userEmail;
+    }
+});
+</script>
+</body>
+</html>
